@@ -1,7 +1,7 @@
 (function () {
   'use strict';
   /* Kolom: [Indonesia, English]. Untuk menambah bahasa: tambah entri di LANGS dan satu kolom di tiap baris. */
-  var LANGS = [['id', 'Bahasa Indonesia'], ['en', 'English']];
+  var LANGS = [['id', 'Indonesia'], ['en', 'English']];
   var D = [
     ['Rimba – Hutan dan Pohon bagi Kehidupan Manusia', 'Rimba – Forests and Trees for Human Life'],
     ['Navigasi utama', 'Main navigation'], ['Bahasa', 'Language'], ['Terang', 'Light'], ['Gelap', 'Dark'],
@@ -57,7 +57,7 @@
     ['Dukungan dan komentar disimpan di peramban ini saja, belum dibagikan ke pengunjung lain.', 'Support and comments are saved in this browser only and are not shared with other visitors.'],
     ['Saya dukung hutan', 'I support the forest'], ['Terima kasih, kamu mendukung hutan', 'Thank you, you support the forest'],
     ['Menanam pohon', 'Plant trees'], ['Kurangi kertas', 'Use less paper'], ['Pilih kayu bersertifikat', 'Choose certified wood'],
-    ['Hutan kecilmu: {n} pohon dari dukungan dan janjimu.', 'Your little forest: {n} trees from your support and pledges.'],
+    ['Hutan kecilmu: {n} pohon dari dukungan dan janjimu.', 'Trees in your little forest: {n}, from your support and pledges.'],
     ['Hutan kecilmu masih kosong. Mulai dari satu dukungan.', 'Your little forest is still empty. Start with one show of support.'],
     ['Belum ada komentar. Jadilah yang pertama menulis untuk hutan.', 'No comments yet. Be the first to write for the forest.'],
     ['🌱 Setuju', '🌱 Agree'], ['Hapus', 'Delete'],

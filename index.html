@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rimba – Hutan dan Pohon bagi Kehidupan Manusia</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="prog" aria-hidden="true"></div>
+
+<nav class="nav" aria-label="Navigasi utama">
+  <a class="brand" href="#atas">Rimba</a>
+  <ul>
+    <li><a href="#pohon">Anatomi pohon</a></li>
+    <li><a href="#manfaat">Manfaat</a></li>
+    <li><a href="#aksi">Aksi</a></li>
+    <li><a href="#komunitas">Komunitas</a></li>
+  </ul>
+  <button class="mode" id="mode" type="button">Mode Gelap</button>
+</nav>
+
+<header class="hero" id="atas">
+  <i class="blob b1"></i><i class="blob b2"></i><i class="blob b3"></i>
+  <svg class="skyline" id="skyline" viewBox="0 0 1200 330" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
+    <g id="f0" fill="#1c3a28"></g><g id="f1" fill="#12281b"></g><g id="f2" fill="#0a1a11"></g>
+  </svg>
+  <div class="wrap hero-in" id="heroIn">
+    <h1>Hutan menjaga kehidupan kita</h1>
+    <p>Udara bersih, air jernih, obat, pangan, dan ketenangan. Semuanya bermula dari pohon.</p>
+    <div class="cta">
+      <a class="btn primary" href="#pohon">Jelajahi pohon</a>
+      <a class="btn glass" href="#manfaat">Lihat manfaatnya</a>
+    </div>
+    <div class="chips">
+      <div class="glass"><b>± ⅓</b><span>daratan bumi tertutup hutan</span></div>
+      <div class="glass"><b>± <span class="cnt" data-to="10">10</span> juta ha</b><span>hutan hilang per tahun, 2015–2020 (perkiraan FAO)</span></div>
+      <div class="glass"><b>1 pohon</b><span>menopang udara, air, tanah, dan satwa</span></div>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="pohon">
+  <div class="wrap">
+    <h2>Anatomi satu pohon</h2>
+    <p class="lead">Setiap bagian punya tugas. Pilih titik pada gambar atau tombol di samping untuk melihat fungsinya.</p>
+    <div class="explore glass">
+      <svg class="tree" id="tree" viewBox="0 0 400 520" role="img" aria-label="Ilustrasi pohon dengan kanopi, batang, akar, dan irisan tanah">
+        <defs>
+          <radialGradient id="aura" cx=".5" cy=".5" r=".5"><stop offset="0" style="stop-color:var(--g1);stop-opacity:.28"/><stop offset="1" style="stop-color:var(--g1);stop-opacity:0"/></radialGradient>
+          <linearGradient id="barkG" x1="0" x2="1"><stop offset="0" stop-color="#6f4630"/><stop offset=".35" stop-color="#a8714a"/><stop offset=".5" stop-color="#c18a5c"/><stop offset=".78" stop-color="#8a5a3a"/><stop offset="1" stop-color="#5f3b27"/></linearGradient>
+          <clipPath id="soilClip"><rect x="10" y="346" width="380" height="164" rx="24"/></clipPath>
+        </defs>
+        <ellipse cx="200" cy="170" rx="215" ry="185" fill="url(#aura)"/>
+        <g clip-path="url(#soilClip)">
+          <rect x="10" y="346" width="380" height="164" class="soil3"/>
+          <rect x="10" y="346" width="380" height="52" class="soil1"/>
+          <rect x="10" y="398" width="380" height="56" class="soil2"/>
+        </g>
+        <g id="pebbles"></g>
+        <g fill="none" stroke="#f6efd9" stroke-width="1" stroke-dasharray="3 3" opacity=".4"><path d="M100 495Q150 470 205 500"/><path d="M205 500Q260 475 304 495"/><path d="M90 440Q120 462 150 480"/><path d="M320 440Q290 470 304 495"/></g>
+        <g id="uroots"></g>
+        <path d="M10 356C10 348 16 344 26 344C90 336 150 342 200 340C250 342 310 336 374 344C384 344 390 348 390 356L390 362L10 362Z" fill="var(--grass)"/>
+        <path d="M30 348C90 341 150 345 200 343" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round" opacity=".35"/>
+        <ellipse cx="200" cy="342" rx="120" ry="7" fill="#000" opacity=".16"/>
+        <g id="sroots"></g>
+        <g class="canopy" id="cDark"></g>
+        <g id="limbs"></g>
+        <path d="M146 342C170 326 180 300 184 272C186 258 190 250 196 246L206 246C212 250 216 258 218 272C222 300 232 326 256 342Z" fill="url(#barkG)"/>
+        <path d="M196 262C194 280 198 292 196 308M208 276C210 292 206 302 210 320" fill="none" stroke="#4a2c1a" stroke-width="1.6" stroke-linecap="round" opacity=".45"/>
+        <ellipse cx="200" cy="304" rx="5" ry="7" fill="#4a2c1a" opacity=".6"/>
+        <g class="canopy" id="cFront"></g>
+        <g id="hots"></g>
+      </svg>
+      <div class="side">
+        <div class="pills" id="pills" role="tablist" aria-label="Bagian pohon"></div>
+        <div class="panel" id="panel" aria-live="polite"><h3>Pilih bagian pohon</h3><p>Penjelasan akan muncul di sini.</p></div>
+      </div>
+    </div>
+    <h3 class="sub">Penampang batang</h3>
+    <div class="explore glass">
+      <svg class="disc" id="disc" viewBox="0 0 300 300" role="img" aria-label="Potongan melintang batang pohon dengan lingkar tahun"></svg>
+      <div class="side">
+        <div class="pills" id="lpills" role="tablist" aria-label="Lapisan batang"></div>
+        <div class="panel" id="lpanel" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="manfaat">
+  <div class="wrap">
+    <h2>Tujuh manfaat hutan bagi manusia</h2>
+    <p class="lead">Dari iklim sampai budaya, hutan bekerja diam-diam di belakang kehidupan sehari-hari.</p>
+    <div class="bento">
+      <article class="card s2"><div class="ico">🌍</div><h3>Mengatur iklim dan udara</h3><p>Pohon menyerap karbon dioksida dan menyimpannya di batang, akar, dan tanah. Saat hutan terbakar atau ditebang, karbon itu kembali ke atmosfer. Penguapan dari daun juga mendinginkan udara sekitar.</p></article>
+      <article class="card"><div class="ico">💧</div><h3>Menjaga air dan tanah</h3><p>Akar membuat air hujan meresap, menahan longsor, dan mengisi mata air.</p></article>
+      <article class="card"><div class="ico">🦋</div><h3>Rumah makhluk hidup</h3><p>Sebagian besar spesies darat hidup di hutan, dari penyerbuk sampai pengurai.</p></article>
+      <article class="card"><div class="ico">🍯</div><h3>Pangan dan obat</h3><p>Buah, madu, sagu, getah, dan tumbuhan obat. Aspirin bermula dari kulit pohon willow.</p></article>
+      <article class="card"><div class="ico">💼</div><h3>Mata pencaharian</h3><p>Petani agroforestri, penyadap getah, dan pemandu wisata hidup dari hutan.</p></article>
+      <article class="card s2"><div class="ico">🧘</div><h3>Kesehatan fisik dan mental</h3><p>Berjalan di hutan berkaitan dengan stres dan tekanan darah yang lebih rendah. Di Jepang kebiasaan ini disebut <i>shinrin-yoku</i>, atau “mandi hutan”.</p></article>
+      <article class="card s4"><div class="ico">🪵</div><h3>Budaya dan spiritual</h3><p>Bagi banyak masyarakat adat, hutan adalah tempat leluhur, sumber pengetahuan, dan bagian dari jati diri. Pengetahuan mereka tentang tumbuhan dan musim sering menjadi kunci pengelolaan hutan yang lestari.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="aksi">
+  <div class="wrap">
+    <h2>Apa yang bisa kita lakukan</h2>
+    <p class="lead">Penyebab utama hilangnya hutan adalah pembukaan lahan untuk pertanian, perkebunan, dan tambang. Pilihan sehari-hari tetap berarti.</p>
+    <div class="acts">
+      <article class="card"><h3>Tanam dan rawat</h3><p>Pilih pohon yang cocok dengan wilayahmu, lalu rawat sampai tumbuh.</p></article>
+      <article class="card"><h3>Pilih produk bijak</h3><p>Cari kayu dan kertas bersertifikat, dan kurangi kertas sekali pakai.</p></article>
+      <article class="card"><h3>Dukung penjaga hutan</h3><p>Dukung masyarakat adat dan lembaga restorasi yang bekerja di lapangan.</p></article>
+      <article class="card"><h3>Jaga ruang hijau</h3><p>Pertahankan taman dan pohon di sekitar tempat tinggalmu.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="komunitas">
+  <div class="wrap">
+    <h2>Suara untuk hutan</h2>
+    <p class="lead">Tunjukkan dukunganmu, pilih janji kecil, lalu tulis pesan untuk hutan dan pohon.</p>
+    <div class="community">
+      <article class="card support">
+        <h3>Dukung hutan</h3>
+        <button class="heart" id="support" type="button" aria-pressed="false"><span aria-hidden="true">🌳</span><span id="supportTxt">Saya dukung hutan</span></button>
+        <h4>Janji kecilku</h4>
+        <div class="vows" id="vows"></div>
+        <div class="mini" aria-live="polite"><div class="mini-row" id="mini" aria-hidden="true"></div><p id="miniTxt"></p></div>
+      </article>
+      <article class="card talk">
+        <h3>Komentar</h3>
+        <form id="cform" autocomplete="off">
+          <label for="cname">Nama</label>
+          <input id="cname" maxlength="30" placeholder="Boleh nama panggilan">
+          <label for="ctext">Pesanmu untuk hutan</label>
+          <textarea id="ctext" rows="3" maxlength="280" required placeholder="Tulis harapan, cerita, atau ajakan..."></textarea>
+          <div class="frow"><span class="small" id="ccount">0 / 280</span><button class="btn primary" type="submit">Kirim komentar</button></div>
+        </form>
+        <ul class="clist" id="clist" aria-live="polite"></ul>
+      </article>
+    </div>
+    <p class="small note">Dukungan dan komentar disimpan di peramban ini saja, belum dibagikan ke pengunjung lain.</p>
+  </div>
+</section>
+</main>
+
+<footer>Angka pada halaman ini adalah perkiraan umum. Untuk data terbaru, periksa laporan FAO dan lembaga kehutanan resmi.</footer>
+<script src="i18n.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

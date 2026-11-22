@@ -182,3 +182,27 @@ footer{padding:5rem 1.25rem calc(2.5rem + env(safe-area-inset-bottom,0px));text-
 #lang option{background:var(--bg);color:var(--text)}
 .nav ul{margin-left:auto;margin-right:auto}
 @media(max-width:719px){#lang{margin-left:auto}}
+
+/* ===== Perbaikan tampilan HP ===== */
+.hero{grid-template-columns:minmax(0,1fr)}
+.hero-in{min-width:0}
+.chips{grid-template-columns:repeat(auto-fit,minmax(min(210px,100%),1fr))}
+.hero h1{overflow-wrap:anywhere}
+@media(max-width:640px){
+  .nav{gap:.5rem;padding:.45rem .45rem .45rem 1rem}
+  .mode{padding:.5rem .8rem}
+  #lang{font-size:16px;padding:.4rem .5rem}
+  .hero-in{padding-block:6.5rem 8rem}
+  .hero p{margin:1.2rem 0 1.5rem}
+  .cta .btn{flex:1 1 100%;text-align:center}
+  .chips{margin-top:2rem;gap:.6rem}
+  .chips .glass{padding:.8rem 1rem}
+  section{padding-block:4.5rem 1rem}
+  .lead{margin-bottom:1.8rem}
+  .explore{padding:1.1rem;border-radius:26px}
+  .pills button,.vows button,.clist .acts2 button{min-height:2.5rem}
+  .heart{width:100%;justify-content:center}
+  .frow{flex-wrap:wrap}.frow .btn{flex:1 1 auto}
+}
+
+.chips b span{display:inline;font-size:inherit;color:inherit;line-height:inherit}
